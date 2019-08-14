@@ -240,47 +240,128 @@
                 </div>
         
             <div class="row">
-            <div class="col-md-6 mb-xs-5">
-                <div class="feature-box text-center">
-                   
-                   <img src="images/team/jidi-member-1.jpeg" style="max-width: 400px" class="img-responsive">
-                   <h4 class="text-center text-white">
-                    <br>
-                       Isaack Kituru<br>
-                       Director
-                   </h4>
+                    <style>
+                            #team {
+                              opacity: 1;
+                              display: block;
+                              width: 100%;
+                              height: auto;
+                              transition: .5s ease;
+                              backface-visibility: hidden;
+                            }
+                            
+                            .team {
+                              transition: .5s ease;
+                              opacity: 0;
+                              position: absolute;
+                              top: 40%;
+                              left: 50%;
+                              transform: translate(-50%, -50%);
+                              -ms-transform: translate(-50%, -50%);
+                              text-align: center;
+                            }
+                            
+                            .feature-box:hover #team {
+                              opacity: 0.3;
+                            }
+                            
+                            .feature-box:hover .team {
+                              opacity: 1;
+                            }
+                            
+                            .team-text {
+                              /* background-color: #4CAF50; */
+                              color: white;
+                              font-weight:500;
+                              font-size: 16px;
+                              padding: 5px 10px;
+                            }
+                            </style>
+
+                    <div class="col-md-4 mb-5 mx-auto">
+                            <div class="feature-box">
+                            
+                            <img src="images/team/jidi-member-1.jpeg" id="team" class="img-responsive">
+                            <div class="team">
+                                <div class="team-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, debitis, saepe praesentium consequatur voluptatibus nesciunt odit tempora quisquam dignissimos ullam.
+                                </div>
+                            </div>
+                            <h4 class="text-center text-white">
+                                <br>
+                                Isaack Kituru<br>
+                                Director
+                            </h4>
+                            </div>
+                        </div>
+
+                <div class="col-md-4 mb-5 mx-auto">
+                    <div class="feature-box text-center">
+                        <img src="images/team/jidi-member-2.jpeg" id="team" class="img-responsive">
+                        <div class="team">
+                                <div class="team-text">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, debitis, saepe praesentium consequatur voluptatibus nesciunt odit tempora quisquam dignissimos ullam.
+                                </div>
+                            </div>
+                        <h4 class="text-center text-white">
+                            <br>
+                        Isaack Kituru<br>
+                        Director
+                    </h4>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 mb-xs-5">
-                <div class="feature-box text-center">
-                    <img src="images/team/jidi-member-2.jpeg" style="max-width: 400px" class="img-responsive">
-                    <h4 class="text-center text-white">
-                        <br>
-                       Isaack Kituru<br>
-                       Director
-                   </h4>
 
-                </div>
-            </div>
-            <!-- <div class="col-md-4 mb-xs-5">
-                <div class="feature-box text-center">
-                    <img src="https://via.placeholder.com/400x300" class="img-responsive">
+                <div class="col-md-4 mb-5 mx-auto">
+                        <div class="feature-box text-center">
+                            <img src="images/team/jidi-member-2.jpeg" id="team" class="img-responsive">
+                            <div class="team">
+                                    <div class="team-text">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, debitis, saepe praesentium consequatur voluptatibus nesciunt odit tempora quisquam dignissimos ullam.
+                                    </div>
+                                </div>
+                            <h4 class="text-center text-white">
+                                <br>
+                            Isaack Kituru<br>
+                            Director
+                        </h4>
+                        </div>
+                    </div>
 
-                </div> -->
-            </div>
-           
+                    <div class="col-md-4 mb-5 mx-auto">
+                            <div class="feature-box text-center">
+                                <img src="images/team/jidi-member-2.jpeg" id="team" class="img-responsive">
+                                <div class="team">
+                                        <div class="team-text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, debitis, saepe praesentium consequatur voluptatibus nesciunt odit tempora quisquam dignissimos ullam.
+                                        </div>
+                                    </div>
+                                <h4 class="text-center text-white">
+                                    <br>
+                                Isaack Kituru<br>
+                                Director
+                            </h4>
+                            </div>
+                        </div>
 
+                        <div class="col-md-4 mb-5 mx-auto">
+                                <div class="feature-box text-center">
+                                
+                                <img src="images/team/jidi-member-1.jpeg" id="team" class="img-responsive">
+                                <div class="team">
+                                        <div class="team-text">
+                                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure, debitis, saepe praesentium consequatur voluptatibus nesciunt odit tempora quisquam dignissimos ullam.
+                                        </div>
+                                    </div>
+                                <h4 class="text-center text-white">
+                                    <br>
+                                    Isaack Kituru<br>
+                                    Director
+                                </h4>
+                                </div>
+                            </div>
+            </div>
 
         </div>
-<!--
-        <div class="text-center">
-            <button class="btn btn-primary text-center mt-4 mb-4  mx-auto" style="background-color: inherit;color: white;border: 2px solid white;">
-                Work with us
-            </button>
-        </div>
-      --->
-
-    </div>
 </section>
 <!--feature end-->
 
@@ -294,7 +375,7 @@
                     <p class="mb-4">
                         © 2019 Jamii Integrated Development Initiative 
                     </p>
-                    <div class="footer-social">
+                    <!-- <div class="footer-social">
                        
     
                     <a href="https://web.facebook.com/primewaretz/" target="_blank"><i class="ti ti-facebook" aria-hidden="true"></i></a>
@@ -304,7 +385,7 @@
                     <a href="https://www.instagram.com/primewaretz/?hl=en" target="_blank"><i class="ti ti-instagram" aria-hidden="true"></i></a>
     
     
-                    </div>
+                    </div> -->
                     <br>
                     <p class="mb-4">
                        Developed by Primeware
